@@ -29,7 +29,7 @@ const Organisation = ({ orgName, repos }) => {
       {orgName && repos.length > 0 ? (
         <React.Fragment>
           <OrganisationDetails orgName={orgName} len={repos.length} />
-          <RepoDetails repoDetails={repoDetails} />
+          <RepoDetails repoDetails={repoDetails} orgName={orgName} />
           <OrganisationRepos repos={repos} setSelectedRepo={setSelectedRepo} />
         </React.Fragment>
       ) : null}

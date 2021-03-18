@@ -1,8 +1,10 @@
 import { Card, CardContent, Typography, Link, Grow } from "@material-ui/core";
 import React from "react";
 
-const RepoDetails = ({ repoDetails }) => {
+const RepoDetails = ({ repoDetails, orgName }) => {
   if (!repoDetails) return null;
+  console.log(repoDetails);
+  if (orgName !== repoDetails.organization.login) return null;
 
   return (
     <Grow in={true}>

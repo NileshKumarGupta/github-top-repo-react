@@ -13,6 +13,8 @@ import {
 import "./organisationRepos.css";
 
 const OrganisationRepos = ({ repos, setSelectedRepo }) => {
+  repos.sort((a, b) => a.stargazers_count < b.stargazers_count);
+
   const renderedItems = repos.map((repo) => {
     return (
       <TableRow
