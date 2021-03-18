@@ -1,0 +1,11 @@
+.tableRow {
+  cursor: pointer;
+}
+
+.tableHeader {
+  background-color: #3f51b5;
+}
+
+.tableHeader * {
+  color: white !important;
+}
